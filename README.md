@@ -43,15 +43,12 @@ Test your memory and concentration with our captivating Memory Game! Flip over c
 2. Click on cards to flip them over and find matching pairs.
 3. Enjoy the challenge of testing your memory skills!
 
-## Demo
-<picture><img src = "pictures/memory-game-demo.mp4" width = 200px></picture>
+## Game Screenshot
+<picture align="center"><img src = "https://github.com/AbdullahAbdelglil/Memory-Game/blob/main/pictures/game-2%20(1).png" width = 200px></picture>
+
 ## Contributing
 Contributions are welcome! If you'd like to enhance the game's features or fix any issues, please fork the repository and submit a pull request.
 or contact with me 
 
-## License
-
 Enjoy testing your memory and have a blast playing the Memory Game!
-
-![Game Screenshot](screenshot.png)
 
