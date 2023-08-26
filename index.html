@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Game</title>
+</head>
+<body>
+    <div class="control-button">
+        <div class="container">
+            <input type="text" onkeyup="getname()" placeholder="Player name">
+            <span>Start Game </span>
+        </div>
+    </div>
+    <div class="repet-screen">
+        <div class="repet">
+            play again ?
+            <button id="yes" onclick="playAgain()">Play Again</button>
+            <button id="no" onclick="cansel()">Cansel</button>
+        </div>
+    </div>
+    <div class="loser-screen">
+        <div class="cont">
+            <span>Time out 🚨</span>
+        </div>
+    </div>
+    <div class="info_container">
+        <div class="name">
+            Hello : <span></span>
+        </div>
+        <div class="tries">
+            Wrong Tries : <span>0</span>
+        </div>
+    </div>
+    <div class="timer">
+        <span id="min">02 : </span>
+        <span id="sec">00</span>
+    </div>
+    <div class="game_container">
+        <div class="game_block" data-tech="css3">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/CSS3_logo.svg.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="css3">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/CSS3_logo.svg.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="html5">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/pngwing.com (1)-html.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="html5">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/pngwing.com (1)-html.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="js">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/pngwing.com (2)-js.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="js">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/pngwing.com (2)-js.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="node-js">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/pngwing.com (3)-node js.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="node-js">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/pngwing.com (3)-node js.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="wing">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/pngwing.com (4)-vue.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="wing">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/pngwing.com (4)-vue.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="anguler">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/pngwing.com (5)-anguler.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="anguler">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/pngwing.com (5)-anguler.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="boot-strap">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/pngwing.com (6)-boot Strap.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="boot-strap">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/pngwing.com (6)-boot Strap.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="java">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/pngwing.com-java.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="java">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/pngwing.com-java.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="pyhton">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/python.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="pyhton">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/python.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="react">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/react.png" alt="">
+            </div>
+        </div>
+        <div class="game_block" data-tech="react">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="pictures/react.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <audio src="audio/mixkit-unlock-game-notification-253.wav" id="success"></audio>
+    <audio src="audio/mixkit-interface-option-select-2573.wav" id="fail"></audio>
+    <audio src="audio/mixkit-completion-of-a-level-2063 (1).wav" id="complete"></audio>
+    <audio src="audio/Game over (OST QuackShot) (1).mp3" id="loser"></audio>
+    <audio src="audio/timer.mp3" id="timer"></audio>
+<script src="main.js"></script>
+</body>
+</html>

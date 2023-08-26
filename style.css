@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Tahoma, sans-serif;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    
+}
+.control-button{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(3, 169, 244, 0.9);
+}
+.container{
+    width:400px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    background-color:#f44336;
+    padding: 15px 25px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 23px;
+    text-align: center;
+}
+.control-button span{
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%,-50%);
+    color: black;
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: letter-spacing 0.5s;
+    text-align: center;
+}
+.control-button input{
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%,-50%);
+    padding:8px;
+    border-radius: 5px;
+    cursor: auto;
+    font-size: 18px;
+    border: none;
+    width: 300px;
+}
+.control-button input:focus{
+    width: 330px;
+    transition: 0.25s;
+}
+.control-button span:hover{
+    letter-spacing: 1.5px;
+}
+
+.info_container{
+    width: 1080px;
+    margin: 20px auto 0;
+    background-color: #f6f6f6;
+    padding: 20px;
+    font-size: 24px;
+    overflow: hidden;
+    border: 4px solid #0078d7;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.info_container .name{
+    float: left;
+    width: 50%;
+}
+.info_container .tries{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+.info_container .tries span{
+    color:crimson;
+}
+.game_container{
+    display: flex;
+    width: 1110px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+.game_container.no-clicking{
+    pointer-events: none;
+}
+.game_container .game_block{
+    height: 190px;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    flex:1 0 200px;
+    margin: 0 10px 20px;
+}
+.game_container .game_block .front{
+    background-color:#f9f9f9;
+    border-radius: 5px;
+}
+.game_container .game_block .front::before{
+    content: "❔";
+    font-size: 125px;
+}
+.game_container .game_block .back{
+    background-color:#ffffff;
+    transform: rotateY(180deg);
+}
+.game_container .game_block .back img{
+    width: 140px;
+    height: 140px;
+    margin-top: 20px;
+}
+.game_container .game_block .face{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    border: 5px solid #0078d7;
+}
+.is-flipped{
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+.has-match{
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+.timer{
+    background-color:white;
+    width: 130px;
+    height: 75px;
+    position:absolute;
+    left:47%;
+    bottom:90%;
+    padding: 20px;
+    font-size: 24px;
+    border: 4px solid #0078d7;
+    border-radius: 50px;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+}
+.highScoore{
+    background-color:#f6f6f6;
+    width: 300px;
+    height: 74px;
+    position:absolute;
+    left: 20px;
+    right: 83%;
+    bottom: 90%;
+    top:100px;
+    padding: 20px;
+    font-size: 24px;
+    border: 4px solid #0078d7;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.repet-screen{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(3, 169, 244, 0.9);
+    display: none;
+}
+.repet{
+    width:300px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #333;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    padding: 15px 25px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+}
+.repet button#yes{
+    cursor: pointer;
+    width: 45%;
+    height: 40px;
+    border: none;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 15px;
+    position: absolute;
+    top:65%;
+    right: 51%;
+}
+.repet button#no{
+    cursor: pointer;
+    width: 45%;
+    height: 40px;
+    border: none;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 15px;
+    position: absolute;
+    top:65%;
+    right: 4%;
+}
+.repet button#yes:hover{
+    background-color: #143642;
+    color: white;
+}
+.repet button#no:hover{
+    background-color: #143642;
+    color: white;
+}
+.loser-screen{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(3, 169, 244, 0.5);
+    display: none;
+}
+.loser-screen .cont{
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image:"https://natwest.mymoneysense.com/media/2539/5_8_memory_cards_game_index_1200_720.jpg";
+    border-radius: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+.loser-screen .cont span{
+    position: absolute;
+    top: 25px;
+    left: 70px;
+    color: aliceblue;
+}
