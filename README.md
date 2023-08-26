@@ -44,7 +44,7 @@ Test your memory and concentration with our captivating Memory Game! Flip over c
 3. Enjoy the challenge of testing your memory skills!
 
 ## Demo
-
+<picture><img src = "pictures/memory-game-demo.mp4" width = 200px></picture>
 ## Contributing
 Contributions are welcome! If you'd like to enhance the game's features or fix any issues, please fork the repository and submit a pull request.
 or contact with me 
