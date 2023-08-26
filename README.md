@@ -1,10 +1,6 @@
 # Memory-Game
 "Enjoy a classic memory game online! This GitHub project lets you play and improve your memory by flipping cards to find matching pairs. The game has a user-friendly interface and can be customized. Join us as a developer or player to have fun while boosting your memory skills!"
 
-# Memory Game Project
-
-Welcome to the Memory Game Project! This interactive web-based game is designed to challenge and enhance your memory skills. Built using only HTML, CSS, and JavaScript, this project offers an enjoyable and engaging experience for players of all ages.
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [Game Overview](#game-overview)
@@ -14,9 +10,9 @@ Welcome to the Memory Game Project! This interactive web-based game is designed 
 - [Usage](#usage)
 - [Demo](#demo)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
+Welcome to the Memory Game Project! This interactive web-based game is designed to challenge and enhance your memory skills. Built using only HTML, CSS, and JavaScript, this project offers an enjoyable and engaging experience for players of all ages.
 This project presents a classic Memory Game, where players need to find matching pairs of cards by flipping them over two at a time. It showcases the power of HTML, CSS, and JavaScript to create an engaging and interactive gaming experience.
 
 ## Game Overview
