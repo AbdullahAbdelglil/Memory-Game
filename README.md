@@ -5,8 +5,6 @@
 
 Welcome to the Web-based Memory Game project! This is a classic card-matching memory game implemented using HTML, CSS, and JavaScript. Test your memory skills by flipping cards to find matching pairs and enjoy a brain-teasing experience right in your browser.
 
-![Memory Game Demo](demo.gif) <!-- Replace with an actual demo GIF or screenshot -->
-
 ## Table of Contents
 
 - [Features](#features)
@@ -43,13 +41,8 @@ Welcome to the Web-based Memory Game project! This is a classic card-matching me
 
 We welcome contributions from the open-source community! If you'd like to contribute new features, fix bugs, or improve the project in any way, feel free to fork this repository and submit a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Acknowledgments
 
 - This project was inspired by the classic memory game and was developed as part of a GitHub project.
-- Special thanks to [Your Name] and [Contributor Names] for their contributions to this project.
 
 Enjoy the game and happy coding!
