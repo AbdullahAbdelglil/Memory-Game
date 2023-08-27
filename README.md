@@ -31,8 +31,8 @@ Test your memory and concentration with our captivating Memory Game! Flip over c
 - Replayability: With a randomized card arrangement, each game offers a new challenge, encouraging players to return for more fun.
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/your-username/memory-game.git`
-2. Navigate to the project directory: `cd memory-game`
+1. Clone the repository: `git clone https://github.com/AbdullahAbdelglil/Memory-Game.git`
+2. Navigate to the project directory: `cd Memory-Game`
 
 ## Usage
 1. Open `index.html` in your web browser.
@@ -43,7 +43,7 @@ Test your memory and concentration with our captivating Memory Game! Flip over c
 <picture align="center"><img src = "https://github.com/AbdullahAbdelglil/Memory-Game/blob/main/pictures/game-2%20(1).png" width = 600px></picture>
 
 ## Contributing
-Contributions are welcome! If you'd like to enhance the game's features or fix any issues, please fork the repository and submit a pull request.
+Contributions are welcome! If you'd like to enhance the game's features or fix any issues, please fork the repository and submit a pull request,
 or contact with me 
 
 Enjoy testing your memory and have a blast playing the Memory Game!
