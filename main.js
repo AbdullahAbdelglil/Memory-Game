@@ -103,31 +103,20 @@ function checkMatchedBlocks(first,second){
 
         first.classList.add("has-match");
         second.classList.add("has-match");
-        setTimeout(()=>{
-            document.getElementById("success").play();
-        },50)
     }
     else
     {
-        setTimeout(()=>{
-            document.getElementById("fail").play();
-        },50)
         counter++;
         setTimeout(()=>{
         tries_elm.innerHTML=counter; 
         first.classList.remove("is-flipped");
         second.classList.remove("is-flipped");
         },duration);
-
-            
-        
+ 
     }
     if(succesCounter===10)
 {
     clearInterval(countDownInterval);
-    setTimeout(()=>{
-        document.getElementById("complete").play();
-    },duration);
     setTimeout(()=>{
         playAgainScreen();
     },duration*2);
@@ -145,7 +134,6 @@ function counetDown(time){
         clearInterval(countDownInterval);
         setTimeout(()=>{
             loser();
-            document.querySelector("#loser").play();
         },duration);
         setTimeout(()=>{
             playAgainScreen();
@@ -157,9 +145,6 @@ function counetDown(time){
         if(sec==0){
         time--;
         sec=60;
-        }
-        if(time==0&&sec==4){
-            document.getElementById("timer").play();
         }
     },duration);
 }
